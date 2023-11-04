@@ -1,0 +1,3 @@
+INDEX VERSION 1.4+C:\Users\user\jdbc ass3\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4041119469.index
+0.index
