@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-16T15:39:27 IST" name="Default suite" finished-at="2023-11-16T15:41:02 IST" duration-ms="94623">
+    <groups>
+    </groups>
+    <test started-at="2023-11-16T15:39:27 IST" name="Default test" finished-at="2023-11-16T15:41:02 IST" duration-ms="94623">
+      <class name="com.ninjademo.qa.TestPages.TestRegisterPage">
+        <test-method is-config="true" signature="InitalizeExtentReport()[pri:0, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8]" started-at="2023-11-16T15:39:26 IST" name="InitalizeExtentReport" finished-at="2023-11-16T15:39:27 IST" duration-ms="1047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitalizeExtentReport -->
+        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8]" started-at="2023-11-16T15:39:27 IST" name="getnameMethod" finished-at="2023-11-16T15:39:27 IST" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3815146b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getnameMethod -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8]" started-at="2023-11-16T15:39:32 IST" name="openApplication" finished-at="2023-11-16T15:40:11 IST" duration-ms="38108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="RegisterUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:49, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8]" started-at="2023-11-16T15:40:11 IST" name="RegisterUser" data-provider="testdata" finished-at="2023-11-16T15:40:33 IST" duration-ms="22454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[demouser12345@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2.345678912E7]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[demouser1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[demouser1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUser -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8]" started-at="2023-11-16T15:40:33 IST" name="generateTestStatus" finished-at="2023-11-16T15:40:33 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ninjademo.qa.TestPages.TestRegisterPage.RegisterUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=RegisterUser status=SUCCESS method=TestRegisterPage.RegisterUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:49, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8]" started-at="2023-11-16T15:40:33 IST" name="openApplication" finished-at="2023-11-16T15:40:45 IST" duration-ms="11677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="RegisterUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:49, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8]" started-at="2023-11-16T15:40:45 IST" name="RegisterUser" data-provider="testdata" finished-at="2023-11-16T15:41:02 IST" duration-ms="17253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user2345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[demouser2345@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5.678934556E7]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[demouser2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[demouser2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUser -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8]" started-at="2023-11-16T15:41:02 IST" name="generateTestStatus" finished-at="2023-11-16T15:41:02 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ninjademo.qa.TestPages.TestRegisterPage.RegisterUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=RegisterUser status=SUCCESS method=TestRegisterPage.RegisterUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:49, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method is-config="true" signature="generateReports()[pri:0, instance:com.ninjademo.qa.TestPages.TestRegisterPage@6e9a5ed8]" started-at="2023-11-16T15:41:15 IST" name="generateReports" finished-at="2023-11-16T15:41:23 IST" duration-ms="8082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReports -->
+      </class> <!-- com.ninjademo.qa.TestPages.TestRegisterPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

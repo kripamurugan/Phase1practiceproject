@@ -1,0 +1,22 @@
+<suite name="test1" verbose="1">
+	
+	<listeners>
+		
+		<listener class-name="com.ninjademo.qa.TestPages.ItestListenerClass"></listener>
+	</listeners>
+	<test name="POMFramework">
+		<classes>
+			
+			
+			<class name="com.ninjademo.qa.TestPages.HomePageTest"></class>
+			<class name="com.ninjademo.qa.TestPages.TestRegisterPage"></class>
+			
+			
+		</classes>
+		
+		
+	</test>
+	
+	
+	
+</suite>

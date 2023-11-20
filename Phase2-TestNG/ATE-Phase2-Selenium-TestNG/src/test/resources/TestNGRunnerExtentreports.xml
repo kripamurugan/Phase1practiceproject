@@ -1,0 +1,31 @@
+<suite name="extentreports" verbose="1">
+    <test name="Test WikiPage">
+        <classes>
+            <class name="com.app.TestNG.extendreports.TestClass">
+                <methods>
+                    <include name="method1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test facebookpage">
+        <classes>
+            <class name="com.app.TestNG.extendreports.TestClass">
+                <methods>
+                    <include name="method2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test rediffPage">
+        <classes>
+            <class name="com.app.TestNG.extendreports.TestClass">
+                <methods>
+                    <include name="method3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

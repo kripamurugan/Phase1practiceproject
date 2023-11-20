@@ -1,0 +1,21 @@
+
+<suite name="Test Suite for Login and Logout from Demo app" verbose="1">
+	<test name="TestCycle1">
+		<classes>
+		<class name="com.app.TestNGScripts.TestAnnotation"></class>
+		<class name="com.app.TestNGScripts.BeforeAfterMethodAnnotation"></class>
+		</classes>
+	</test>
+		<test name="TestCycle2">
+		<classes>
+		<class name="com.app.TestNGScripts.TestAnnotation"></class>
+		<class name="com.app.TestNGScripts.BeforeAfterMethodAnnotation"></class>
+		</classes>
+	</test>
+		<test name="TestCycle3">
+		<classes>
+		<class name="com.app.TestNGScripts.TestAnnotation"></class>
+		<class name="com.app.TestNGScripts.BeforeAfterMethodAnnotation"></class>
+		</classes>
+	</test>
+</suite>
