@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CalculatorServlet.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calcwebapp Maven Webapp</a> &gt; <a href="index.source.html" class="el_package">com.cruds.servlet</a> &gt; <span class="el_source">CalculatorServlet.java</span></div><h1>CalculatorServlet.java</h1><pre class="source lang-java linenums">package com.cruds.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.cruds.service.CalculatorService;
+
+/**
+ * Servlet implementation class CalculatorServlet
+ */
+public class CalculatorServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public CalculatorServlet() {
+<span class="nc" id="L23">        super();</span>
+        // TODO Auto-generated constructor stub
+<span class="nc" id="L25">    }</span>
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+<span class="nc" id="L31">		doPost(request, response);</span>
+<span class="nc" id="L32">	}</span>
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+<span class="nc" id="L39">		String strNum1 = request.getParameter(&quot;num1&quot;);</span>
+<span class="nc" id="L40">		String strNum2 = request.getParameter(&quot;num2&quot;);</span>
+
+		int result;
+		
+<span class="nc bnc" id="L44" title="All 4 branches missed.">		if (strNum1.length() ==0 &amp;&amp; strNum2.length() ==0 ) {</span>
+<span class="nc" id="L45">			result = 0;</span>
+		} else {
+
+<span class="nc" id="L48">			int num1 = Integer.parseInt(strNum1);</span>
+<span class="nc" id="L49">			int num2 = Integer.parseInt(strNum2);</span>
+		
+<span class="nc" id="L51">			result = CalculatorService.add(num1, num2);</span>
+		}
+		
+<span class="nc" id="L54">		RequestDispatcher rd = request.getRequestDispatcher(&quot;index.jsp&quot;);</span>
+<span class="nc" id="L55">		request.setAttribute(&quot;RESULT&quot;, String.valueOf(result));</span>
+<span class="nc" id="L56">		rd.forward(request, response);</span>
+		
+		
+<span class="nc" id="L59">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

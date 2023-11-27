@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2023-11-23T07:37:58.664">
+<file name="/var/lib/jenkins/workspace/CodeCoverage/src/main/java/com/cruds/service/CalculatorService.java">
+<violation beginline="5" endline="5" begincolumn="28" endcolumn="28" rule="ShortVariable" ruleset="Code Style" package="com.cruds.service" class="CalculatorService" method="add" variable="x" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like x
+</violation>
+<violation beginline="5" endline="5" begincolumn="35" endcolumn="35" rule="ShortVariable" ruleset="Code Style" package="com.cruds.service" class="CalculatorService" method="add" variable="y" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like y
+</violation>
+<violation beginline="5" endline="5" begincolumn="24" endcolumn="28" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="com.cruds.service" class="CalculatorService" method="add" variable="x" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'x' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="31" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="com.cruds.service" class="CalculatorService" method="add" variable="y" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'y' is not assigned and could be declared final
+</violation>
+<violation beginline="10" endline="10" begincolumn="33" endcolumn="33" rule="ShortVariable" ruleset="Code Style" package="com.cruds.service" class="CalculatorService" method="subtract" variable="x" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like x
+</violation>
+<violation beginline="10" endline="10" begincolumn="40" endcolumn="40" rule="ShortVariable" ruleset="Code Style" package="com.cruds.service" class="CalculatorService" method="subtract" variable="y" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like y
+</violation>
+<violation beginline="10" endline="10" begincolumn="29" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="com.cruds.service" class="CalculatorService" method="subtract" variable="x" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'x' is not assigned and could be declared final
+</violation>
+<violation beginline="10" endline="10" begincolumn="36" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="com.cruds.service" class="CalculatorService" method="subtract" variable="y" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'y' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/var/lib/jenkins/workspace/CodeCoverage/src/main/java/com/cruds/servlet/CalculatorServlet.java">
+<violation beginline="22" endline="25" begincolumn="12" endcolumn="5" rule="UnnecessaryConstructor" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="CalculatorServlet" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryconstructor" priority="3">
+Avoid unnecessary constructors - the compiler will generate these for you
+</violation>
+<violation beginline="30" endline="30" begincolumn="23" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="doGet" variable="request" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'request' is not assigned and could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="51" endcolumn="78" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="doGet" variable="response" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'response' is not assigned and could be declared final
+</violation>
+<violation beginline="30" endline="32" begincolumn="12" endcolumn="2" rule="MissingOverride" ruleset="Best Practices" package="com.cruds.servlet" class="CalculatorServlet" method="doGet" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+The method 'doGet(HttpServletRequest, HttpServletResponse)' is missing an @Override annotation.
+</violation>
+<violation beginline="37" endline="37" begincolumn="24" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="doPost" variable="request" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'request' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="52" endcolumn="79" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="doPost" variable="response" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'response' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="59" begincolumn="12" endcolumn="2" rule="MissingOverride" ruleset="Best Practices" package="com.cruds.servlet" class="CalculatorServlet" method="doPost" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+The method 'doPost(HttpServletRequest, HttpServletResponse)' is missing an @Override annotation.
+</violation>
+<violation beginline="39" endline="39" begincolumn="3" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="doPost" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'strNum1' could be declared final
+</violation>
+<violation beginline="40" endline="40" begincolumn="3" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="doPost" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'strNum2' could be declared final
+</violation>
+<violation beginline="48" endline="48" begincolumn="4" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="doPost" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'num1' could be declared final
+</violation>
+<violation beginline="49" endline="49" begincolumn="4" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="doPost" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'num2' could be declared final
+</violation>
+<violation beginline="54" endline="54" begincolumn="21" endcolumn="22" rule="ShortVariable" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="doPost" variable="rd" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like rd
+</violation>
+<violation beginline="54" endline="54" begincolumn="3" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.cruds.servlet" class="CalculatorServlet" method="doPost" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'rd' could be declared final
+</violation>
+</file>
+<file name="/var/lib/jenkins/workspace/CodeCoverage/src/test/java/com/cruds/test/TestCalculatorService.java">
+<violation beginline="9" endline="21" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="com.cruds.test" class="TestCalculatorService" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="13" endline="13" begincolumn="3" endcolumn="14" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="com.cruds.test" class="TestCalculatorService" method="testAdd" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+<violation beginline="18" endline="18" begincolumn="3" endcolumn="14" rule="JUnitAssertionsShouldIncludeMessage" ruleset="Best Practices" package="com.cruds.test" class="TestCalculatorService" method="testNull" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage" priority="3">
+JUnit assertions should include a message
+</violation>
+</file>
+</pmd>
