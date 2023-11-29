@@ -1,0 +1,4 @@
+$(document).ready(function() {
+CucumberHTML.timelineItems.pushArray([{"id":"edea5b38-74d9-4126-9752-d11b55e83c46","feature":"Test Wiki page on browser","scenario":"Test Create account on Wiki page","start":1701157823626,"group":1,"content":"","tags":"@all,@functional,","end":1701157838439,"className":"passed"},{"id":"fb08e3a0-45cf-4632-8a66-4f338633b355","feature":"Test Wiki page on browser","scenario":"Test Login link on Wiki Page","start":1701157838487,"group":1,"content":"","tags":"@all,@functional,@login,","end":1701157854211,"className":"passed"}]);
+CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
+});
