@@ -1,0 +1,19 @@
+pipeline {
+  agent any
+
+  tools {nodejs "node"}
+
+  stages {
+    stage('Postman CLI Login') {
+      steps {
+        bat 'postman login --with-api-key PMAK-6577e4081d2a72003f52bcc4-a46b5ccff311344c43b639e485c065c692'
+      }
+    }
+
+    stage('Running collection') {
+      steps {
+        bat 'postman collection run "31715007-aa9d71eb-76c0-45a9-909d-eb9d0a833449" -e "31715007-48abeab9-8de6-494a-9c70-3a47a688dc8a"'
+      }
+    }
+  }
+}

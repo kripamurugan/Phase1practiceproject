@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "70c89c0d-9656-44c2-9887-571e722e7ffd",
+		"name": "you-tube",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31715007"
+	},
+	"item": [
+		{
+			"name": "youtube",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"workspace\": {\n        \"id\": \"d1a51e2d-3ac3-4e44-9dab-80518bcb83e2\",\n        \"name\": \"Workspace-PostmanDemo\"\n    }\n}"
+				},
+				"url": {
+					"raw": "{{url}}/youtube",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"youtube"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"workspace\": {\n        \"id\": \"d1a51e2d-3ac3-4e44-9dab-80518bcb83e2\",\n        \"name\": \"Workspace-PostmanDemo\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{url}}/youtube",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"youtube"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"workspace\": {\n        \"id\": \"d1a51e2d-3ac3-4e44-9dab-80518bcb83e2\",\n        \"name\": \"Workspace-PostmanDemo\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://d14696ee-571c-4aa4-87a8-0ed2fb17603e.mock.pstmn.io"
+		}
+	]
+}

@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "aa9d71eb-76c0-45a9-909d-eb9d0a833449",
+		"name": "HTTP-Methods",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31715007"
+	},
+	"item": [
+		{
+			"name": "GetMethod-Demo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{PM_API_KEY}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.postman.com/workspaces",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post-Method-Demo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Chaining the request,chaining with delete request and provide workflow id in the next DeleteRequest\r",
+							"//(Post-Method-Demo with Delete-Method-Demo)\r",
+							"\r",
+							"\r",
+							"var resData=JSON.parse(responseBody);\r",
+							"console.log(resData.workspace.id);\r",
+							"pm.environment.set(\"workspace_id\",resData.workspace.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{PM_API_KEY}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workspace\": {\r\n        \"name\": \"Workspace-PostmanDemo\",\r\n        \"type\": \"personal\",\r\n        \"visibility\": \"personal\",\r\n        \"discription\": \"This workspace created from postman\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.postman.com/workspaces",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutMethod-Demo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{PM_API_KEY}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workspace\": {\r\n        \"id\": \"4637ac8a-5474-4ee0-906c-b700038396df\",\r\n        \"name\": \"Workspace-Postman-New\",\r\n        \"type\": \"personal\",\r\n        \"visibility\": \"personal\",\r\n        \"discription\": \"This workspace created from postman\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.postman.com/workspaces/4637ac8a-5474-4ee0-906c-b700038396df",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces",
+						"4637ac8a-5474-4ee0-906c-b700038396df"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMethod-Demo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{PM_API_KEY}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.postman.com/workspaces/{{workspace_id}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces",
+						"{{workspace_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OptionsMethod-Demo",
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{PM_API_KEY}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.postman.com/workspaces",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HeadMethod-Demo",
+			"request": {
+				"method": "HEAD",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{PM_API_KEY}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.postman.com/workspaces",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getreqposts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/20",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postreqposts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 105,\r\n    \"id\": 101,\r\n    \"title\": \"doloribus ad provident suscipit at\",\r\n    \"body\": \"qui consequuntur ducimus possimus quisquam amet similique\\nsuscipit porro ipsam amet\\neos veritatis officiis exercitationem vel fugit aut necessitatibus totam\\nomnis rerum consequatur expedita quidem cumque explicabo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putreqposts",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 3,\r\n    \"id\": 20,\r\n    \"title\": \"Updated the title1\",\r\n    \"body\": \"updated here the new one\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/20",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patchreqposts",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Updated the title1 using the PATCH Method\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/20",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletereqposts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/20",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users/1",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostUserRandom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"username\": \"{{$randomUserName}}\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"address\": {\r\n        \"street\": \"{{$randomStreetName}}\",\r\n        \"suite\": \"{{$randomStreetAddress}}\",\r\n        \"city\": \"{{$randomCity}}\",\r\n        \"zipcode\": \"{{$randomCountryCode}}\",\r\n        \"geo\": {\r\n            \"lat\": \"-37.3159\",\r\n            \"lng\": \"81.1496\"\r\n        }\r\n    },\r\n    \"phone\": \"1-770-736-8031 x56442\",\r\n    \"website\": \"hildegard.org\",\r\n    \"company\": {\r\n        \"name\": \"Romaguera-Crona\",\r\n        \"catchPhrase\": \"Multi-layered client-server neural-net\",\r\n        \"bs\": \"harness real-time e-markets\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "PM_API_KEY",
+			"value": "PMAK-6577e4081d2a72003f52bcc4-a46b5ccff311344c43b639e485c065c692",
+			"type": "string"
+		}
+	]
+}
